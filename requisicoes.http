@@ -1,0 +1,32 @@
+
+GET http://localhost:3000/usuario
+
+###
+
+GET http://localhost:3000/usuario/caddb52f-379b-4e52-a061-d6dba69acace
+
+###
+
+DELETE  http://localhost:3000/usuario/7ce1e2b5-3608-47c0-94f2-599382dd7b5b
+
+###
+POST http://localhost:3000/usuario
+content-type: application/json
+
+{
+  "nome": "Pedro Henrique Silva",
+  "email": "pedrohr@gmail.com",
+  "senha": "53@S$$112l0p"
+}
+
+###
+
+PATCH http://localhost:3000/usuario/caddb52f-379b-4e52-a061-d6dba69acace
+content-type: application/json
+
+{
+  "nome": "Pedro Henrique Silva",
+  "email": "pedrohr@gmail.com",
+  "senha": "53@S$$112l0p"
+}
+
